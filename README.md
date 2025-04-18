@@ -13,6 +13,17 @@ React Native kullanılarak geliştirilmiş mobil uygulama, PHP ve MySQL destekli
 
 ---
 
+📝 Veritabanı Yapısı
+
+CREATE TABLE water_logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  amount INT NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+---
+
 ## ⚙️ Kullanılan Teknolojiler
 
 | Katman | Teknoloji | Açıklama |
@@ -31,3 +42,5 @@ npm install @react-navigation/native
 npm install @react-navigation/native-stack
 npm install @react-native-async-storage/async-storage
 npm install axios
+
+
